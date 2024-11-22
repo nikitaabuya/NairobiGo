@@ -18,22 +18,22 @@
         android:layout_marginTop="24dp" />
 
     <Button
-        android:id="@+id/button_toast"
+        android:id="@+id/button_book"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="56dp"
         android:backgroundTint="#FF9800"
-        android:text="Contractor"
+        android:text="Book Contractor"
         android:textSize="30sp"
         android:textStyle="bold"/>
 
     <Button
-        android:id="@+id/button_count"
+        android:id="@+id/button_post"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:backgroundTint="#0096a6"
-        android:text="Client"
+        android:text="Post Job opportunity"
         android:textSize="30sp"
         android:textStyle="bold"/>
 </LinearLayout>
