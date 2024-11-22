@@ -16,15 +16,15 @@ class MainFunctionalityActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main_functionality)
 
-        val toastButton = findViewById<Button>(R.id.button_toast)
-        val countButton = findViewById<Button>(R.id.button_count)
-        val countTextView = findViewById<TextView>(R.id.textview_count)
+        val bookButton = findViewById<Button>(R.id.button_book)
+        val postButton = findViewById<Button>(R.id.button_post)
+        val countTextView = findViewById<TextView>(R.id.textview_choose)
 
-        toastButton.setOnClickListener {
+        bookButton.setOnClickListener {
             Toast.makeText(this, "Hello Toast!", Toast.LENGTH_SHORT).show()
         }
 
-        countButton.setOnClickListener {
+        postButton.setOnClickListener {
             count++
             countTextView.text = count.toString()
         }
