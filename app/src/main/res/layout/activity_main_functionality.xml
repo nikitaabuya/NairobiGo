@@ -5,34 +5,35 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    android:background="#FF062F50">
-
-    <Button
-        android:id="@+id/button_toast"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:backgroundTint="#FF9800"
-        android:text="Toast"
-        android:textSize="32sp"
-        android:textStyle="bold"/>
+    android:background="@drawable/intropic1">
 
     <TextView
         android:id="@+id/textview_count"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="0"
-        android:textSize="156sp"
-        android:textColor="@color/white"
+        android:text="Choose below:"
+        android:textSize="30sp"
+        android:textColor="#000000"
+        android:textStyle="bold"
         android:layout_marginTop="24dp" />
+
+    <Button
+        android:id="@+id/button_toast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:backgroundTint="#FF9800"
+        android:text="Contractor"
+        android:textSize="30sp"
+        android:textStyle="bold"/>
 
     <Button
         android:id="@+id/button_count"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="16dp"
         android:backgroundTint="#0096a6"
-        android:text="Count"
-        android:textSize="32sp"
+        android:text="Client"
+        android:textSize="30sp"
         android:textStyle="bold"/>
 </LinearLayout>
