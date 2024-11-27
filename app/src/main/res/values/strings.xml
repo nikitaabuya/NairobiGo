@@ -9,4 +9,8 @@
     <string name="plumber">Plumber</string>
     <string name="technician_intro">Technician: Rate charged: Ksh 3800/hour</string>
     <string name="technician">Technician</string>
+    <string name="electrician_intro">Electrician: Rate charged: Ksh 3000/hour</string>
+    <string name="electrician">Electrician</string>
+    <string name="painter_intro">Painter: Rate charged: Ksh 1800/hour</string>
+    <string name="painter">Painter</string>
 </resources>

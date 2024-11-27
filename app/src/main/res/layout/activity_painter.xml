@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#FF062F50">
+
+    <TextView
+        android:id="@+id/textview_painter_intro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/painter_intro"
+        android:textSize="30sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_marginTop="24dp" />
+
+    <ImageView
+        android:id="@+id/painter"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/painter"
+        android:contentDescription="@string/painter"
+        />
+
+    <Button
+        android:id="@+id/button_cleaner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:backgroundTint="#FF9800"
+        android:text="@string/book_button"
+        android:textSize="30sp"
+        android:textStyle="bold"/>
+
+
+</LinearLayout>
