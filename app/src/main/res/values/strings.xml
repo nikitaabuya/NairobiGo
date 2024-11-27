@@ -7,10 +7,12 @@
     <string name="nanny">Nanny</string>
     <string name="plumber_intro">Plumber: Rate charged: Ksh 800/hour</string>
     <string name="plumber">Plumber</string>
-    <string name="technician_intro">Technician: Rate charged: Ksh 3800/hour</string>
-    <string name="technician">Technician</string>
+    <string name="technician_intro">HVAC Technician: Rate charged: Ksh 3800/hour</string>
+    <string name="technician">HVAC Technician</string>
     <string name="electrician_intro">Electrician: Rate charged: Ksh 3000/hour</string>
     <string name="electrician">Electrician</string>
     <string name="painter_intro">Painter: Rate charged: Ksh 1800/hour</string>
     <string name="painter">Painter</string>
+    <string name="client_intro">Thanks for choosing NairobiGo! Here are the Contractors available:</string>
+
 </resources>

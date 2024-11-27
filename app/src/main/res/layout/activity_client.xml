@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="#FF062F50">
 
     <TextView
-        android:id="@+id/textview_clientintro"
+        android:id="@+id/textview_client_intro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Thanks for choosing NairobiGo! Here are the Contractors available:"
+        android:text="@string/client_intro"
         android:textSize="30sp"
         android:textColor="#FFFFFF"
         android:textStyle="bold"
@@ -22,7 +23,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="56dp"
         android:backgroundTint="#FF9800"
-        android:text="House cleaner"
+        android:text="@string/house_cleaner"
         android:textSize="30sp"
         android:textStyle="bold"/>
 
@@ -32,7 +33,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:backgroundTint="#FF9800"
-        android:text="Plumber"
+        android:text="@string/plumber"
         android:textSize="30sp"
         android:textStyle="bold"/>
 
@@ -42,7 +43,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:backgroundTint="#FF9800"
-        android:text="Nanny"
+        android:text="@string/nanny"
         android:textSize="30sp"
         android:textStyle="bold"/>
 
@@ -52,7 +53,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:backgroundTint="#FF9800"
-        android:text="Electrician"
+        android:text="@string/electrician"
         android:textSize="30sp"
         android:textStyle="bold"/>
 
@@ -62,7 +63,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:backgroundTint="#FF9800"
-        android:text="Painter"
+        android:text="@string/painter"
         android:textSize="30sp"
         android:textStyle="bold"/>
 
@@ -72,7 +73,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:backgroundTint="#FF9800"
-        android:text="HVAC Technician"
+        android:text="@string/technician"
         android:textSize="30sp"
         android:textStyle="bold"/>
 </LinearLayout>

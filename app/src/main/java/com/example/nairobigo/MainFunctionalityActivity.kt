@@ -1,5 +1,6 @@
 package com.example.nairobigo
 
+import android.content.Intent // Import the Intent class
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
@@ -14,16 +15,21 @@ class MainFunctionalityActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        enableEdgeToEdge()
         setContentView(R.layout.activity_main_functionality)
 
         val bookButton = findViewById<Button>(R.id.button_book)
         val postButton = findViewById<Button>(R.id.button_post)
         val countTextView = findViewById<TextView>(R.id.textview_choose)
 
+        // Set up click listener for the "Book Contractor" button
         bookButton.setOnClickListener {
-            Toast.makeText(this, "Hello Toast!", Toast.LENGTH_SHORT).show()
+            // Start ClientActivity
+            val intent = Intent(this, ClientActivity::class.java)
+            startActivity(intent)
         }
 
+        // Set up click listener for the "Post Job Opportunity" button
         postButton.setOnClickListener {
             count++
             countTextView.text = count.toString()
