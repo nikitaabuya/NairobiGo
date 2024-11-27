@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">NairobiGo</string>
+    <string name="housecleaner_intro">House cleaner: Rate charged: Ksh 1000/hour</string>
+    <string name="house_cleaner">House cleaner</string>
+    <string name="book_button">Book</string>
+    <string name="nanny_intro">Nanny: Rate charged: Ksh 2500/hour</string>
+    <string name="nanny">Nanny</string>
+    <string name="plumber_intro">Plumber: Rate charged: Ksh 800/hour</string>
+    <string name="plumber">Plumber</string>
+    <string name="technician_intro">Technician: Rate charged: Ksh 3800/hour</string>
+    <string name="technician">Technician</string>
 </resources>

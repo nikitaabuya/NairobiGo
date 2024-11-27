@@ -8,21 +8,21 @@
     android:background="#FF062F50">
 
     <TextView
-        android:id="@+id/textview_plumber_intro"
+        android:id="@+id/textview_technician_intro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/plumber_intro"
+        android:text="@string/technician_intro"
         android:textSize="30sp"
         android:textColor="#FFFFFF"
         android:textStyle="bold"
         android:layout_marginTop="24dp" />
 
     <ImageView
-        android:id="@+id/plumber"
+        android:id="@+id/technician"
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:layout_marginTop="24dp"
-        android:src="@drawable/plumber"
+        android:src="@drawable/technician"
         android:contentDescription="@string/plumber"
         />
 
