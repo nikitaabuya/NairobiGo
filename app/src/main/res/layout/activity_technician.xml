@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -27,7 +28,7 @@
         />
 
     <Button
-        android:id="@+id/button_cleaner"
+        android:id="@+id/button_technician"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="56dp"
@@ -35,6 +36,4 @@
         android:text="@string/book_button"
         android:textSize="30sp"
         android:textStyle="bold"/>
-
-
 </LinearLayout>

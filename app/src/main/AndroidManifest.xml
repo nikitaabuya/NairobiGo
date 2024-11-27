@@ -13,6 +13,24 @@
         android:theme="@style/Theme.NairobiGo"
         tools:targetApi="31">
         <activity
+            android:name=".BookingDetailsActivityElectrician"
+            android:exported="false" />
+        <activity
+            android:name=".BookingDetailsActivityCleaner"
+            android:exported="false" />
+        <activity
+            android:name=".BookingDetailsActivityNanny"
+            android:exported="false" />
+        <activity
+            android:name=".BookingDetailsActivityPainter"
+            android:exported="false" />
+        <activity
+            android:name=".BookingDetailsActivityPlumber"
+            android:exported="false" />
+        <activity
+            android:name=".BookingDetailsActivityTechnician"
+            android:exported="false" />
+        <activity
             android:name=".PainterActivity"
             android:exported="false" />
         <activity
@@ -42,14 +60,12 @@
         <activity
             android:name=".MainActivity"
             android:exported="true">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
     </application>
 
 </manifest>

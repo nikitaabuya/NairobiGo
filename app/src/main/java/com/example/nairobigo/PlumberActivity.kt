@@ -1,5 +1,6 @@
 package com.example.nairobigo
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import androidx.activity.enableEdgeToEdge
@@ -20,5 +21,11 @@ class PlumberActivity : AppCompatActivity() {
             insets
         }
 
+        // Set up the button click listener for booking
+        val buttonBook = findViewById<Button>(R.id.button_plumber)
+        buttonBook.setOnClickListener {
+            // Start the BookingDetailsActivity when the book button is clicked
+            startActivity(Intent(this, BookingDetailsActivityTechnician::class.java))
         }
     }
+}
