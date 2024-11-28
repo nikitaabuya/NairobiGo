@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "327672632658",
+    "project_id": "nairobigo-36857",
+    "storage_bucket": "nairobigo-36857.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:327672632658:android:1fb2f29f87b4bd27e8968b",
+        "android_client_info": {
+          "package_name": "com.example.nairobigo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD2rpbNU4QXzBcXlKdBjSp47id4Y10Evg4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
