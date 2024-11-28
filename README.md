@@ -4,7 +4,8 @@ This project aims to create a centralised marketplace for clients to find blue-c
 
 ## Screens in the Project
 
-![Screenshot_2024-11-27-17-35-10-24](https://github.com/user-attachments/assets/284a7442-0a61-4df8-a98a-dbfce5394945)
+Landing page:
+<img src="https://github.com/user-attachments/assets/284a7442-0a61-4df8-a98a-dbfce5394945" alt="Screenshot" width="300" />
 
 ![Screenshot_2024-11-27-17-35-17-85](https://github.com/user-attachments/assets/115ec348-de09-4d5d-8352-221cd99866cf)
 
