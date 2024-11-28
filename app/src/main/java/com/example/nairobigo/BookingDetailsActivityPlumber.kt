@@ -1,35 +1,58 @@
 package com.example.nairobigo
 
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.google.firebase.database.DatabaseReference
+import com.google.firebase.database.FirebaseDatabase
+import android.widget.Toast
 
 class BookingDetailsActivityPlumber : AppCompatActivity() {
+    private lateinit var database: DatabaseReference
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_booking_details_plumber)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
-        }
 
-                // Set up the button click listener
-                val buttonSubmit = findViewById<Button>(R.id.button_submit_booking)
-                buttonSubmit.setOnClickListener {
-                    // Handle the submission of booking details
-                    // You can retrieve the input fields here
-                    val name = findViewById<EditText>(R.id.edit_text_name).text.toString()
-                    val location = findViewById<EditText>(R.id.edit_text_location).text.toString()
-                    val date = findViewById<EditText>(R.id.edit_text_date).text.toString()
-                    val hours = findViewById<EditText>(R.id.edit_text_hours).text.toString()
+        database = FirebaseDatabase.getInstance().reference
 
-                    // Handle the booking details (e.g., saving, sending to server, etc.)
+        // Set up the button click listener
+        val buttonSubmit = findViewById<Button>(R.id.button_submit_booking)
+        buttonSubmit.setOnClickListener {
+            val name = findViewById<EditText>(R.id.edit_text_name).text.toString()
+            val location = findViewById<EditText>(R.id.edit_text_location).text.toString()
+            val date = findViewById<EditText>(R.id.edit_text_date).text.toString()
+            val hours = findViewById<EditText>(R.id.edit_text_hours).text.toString()
+
+            val booking = Booking(name, location, date, hours, "plumber")
+
+            // Log the booking details
+            Log.d("BookingDetails", "Booking: $booking")
+
+            // Save to Firebase under the technician node
+            database.child("bookings").child("plumber").push().setValue(booking)
+                .addOnSuccessListener {
+                    Toast.makeText(this, "Booking saved successfully!", Toast.LENGTH_SHORT).show()
                 }
-            }
+                .addOnFailureListener { exception ->
+                    // Log the error
+                    Log.e("FirebaseError", "Failed to save booking", exception)
+                    Toast.makeText(this, "Failed to save booking: ${exception.message}", Toast.LENGTH_SHORT).show()
+                }
         }
+    }
+
+    data class Booking(
+        val name: String = "",
+        val location: String = "",
+        val date: String = "",
+        val hours: String = "",
+        val serviceType: String = ""
+    )
+}
