@@ -1,5 +1,6 @@
 package com.example.nairobigo
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import androidx.activity.enableEdgeToEdge
@@ -20,11 +21,11 @@ class HouseCleanerActivity : AppCompatActivity() {
             insets
         }
 
-        // Optionally set up button click listener for booking functionality
-        val buttonBook = findViewById<Button>(R.id.button_cleaner)
-
+        // Set up the button click listener for booking
+        val buttonBook = findViewById<Button>(R.id.button_cleaner) // Change this ID to your booking button ID
         buttonBook.setOnClickListener {
-            // Implement booking logic here
+            // Start the BookingDetailsActivity when the book button is clicked
+            startActivity(Intent(this, BookingDetailsActivityCleaner::class.java))
         }
     }
 }

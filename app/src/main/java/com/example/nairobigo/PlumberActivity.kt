@@ -25,7 +25,7 @@ class PlumberActivity : AppCompatActivity() {
         val buttonBook = findViewById<Button>(R.id.button_plumber)
         buttonBook.setOnClickListener {
             // Start the BookingDetailsActivity when the book button is clicked
-            startActivity(Intent(this, BookingDetailsActivityTechnician::class.java))
+            startActivity(Intent(this, BookingDetailsActivityPlumber::class.java))
         }
     }
 }
