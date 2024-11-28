@@ -30,9 +30,10 @@ class MainFunctionalityActivity : AppCompatActivity() {
         }
 
         // Set up click listener for the "Post Job Opportunity" button
-        postButton.setOnClickListener {
-            count++
-            countTextView.text = count.toString()
+        val buttonPost = findViewById<Button>(R.id.button_post)
+        buttonPost.setOnClickListener {
+            val intent = Intent(this, ContractorActivity::class.java)
+            startActivity(intent)
         }
     }
 }

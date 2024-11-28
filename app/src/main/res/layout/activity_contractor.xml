@@ -1,10 +1,92 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Background Image -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/intropic3"
+        android:scaleType="centerCrop"
+        android:alpha="0.25"/>
+
+    <LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ContractorActivity">
+    android:orientation="vertical"
+    android:padding="16dp">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#0096a6"
+        android:text="@string/contractor_opportunity"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp"
+        android:padding="16dp"
+        android:minHeight="48dp"/>
+
+    <Spinner
+        android:id="@+id/spinner_contractors"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:padding="16dp"/>
+
+    <EditText
+        android:id="@+id/edit_text_date"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/date_hint"
+        android:inputType="date"
+        android:layout_marginTop="16dp"
+        android:padding="16dp"
+        android:minHeight="48dp"/>
+
+    <EditText
+        android:id="@+id/edit_text_location"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/location_hint"
+        android:inputType="text"
+        android:layout_marginTop="16dp"
+        android:padding="16dp"
+        android:minHeight="48dp"/>
+
+    <EditText
+        android:id="@+id/edit_text_payment"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/payment_hint"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="16dp"
+        android:padding="16dp"
+        android:minHeight="48dp"/>
+
+    <EditText
+        android:id="@+id/edit_text_hours"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/hours_hint"
+        android:inputType="number"
+        android:layout_marginTop="16dp"
+        android:padding="16dp"
+        android:minHeight="48dp"/>
+
+    <Button
+        android:id="@+id/button_submit"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="@string/submit_button"
+        android:padding="16dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#0096a6"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:minHeight="48dp"/>
+
+</LinearLayout>

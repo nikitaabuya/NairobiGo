@@ -15,4 +15,12 @@
     <string name="painter">Painter</string>
     <string name="client_intro">Thanks for choosing NairobiGo! Here are the Contractors available:</string>
 
+        <string name="contractor_opportunity">You have an opportunity for our contractors?</string>
+        <string name="date_hint">Date of appointment</string>
+        <string name="location_hint">Where are you located?</string>
+        <string name="payment_hint">Payment amount proposal</string>
+        <string name="hours_hint">How many hours do you need them?</string>
+        <string name="submit_button">Submit</string>
+
+
 </resources>
