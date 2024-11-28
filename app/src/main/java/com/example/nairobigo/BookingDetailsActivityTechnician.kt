@@ -1,6 +1,7 @@
 package com.example.nairobigo
 
 import android.os.Bundle
+import android.util.Log // Import Log for logging
 import android.widget.Button
 import android.widget.EditText
 import androidx.activity.enableEdgeToEdge
@@ -31,13 +32,18 @@ class BookingDetailsActivityTechnician : AppCompatActivity() {
 
             val booking = Booking(name, location, date, hours, "technician")
 
+            // Log the booking details
+            Log.d("BookingDetails", "Booking: $booking")
+
             // Save to Firebase under the technician node
             database.child("bookings").child("technician").push().setValue(booking)
                 .addOnSuccessListener {
                     Toast.makeText(this, "Booking saved successfully!", Toast.LENGTH_SHORT).show()
                 }
-                .addOnFailureListener {
-                    Toast.makeText(this, "Failed to save booking.", Toast.LENGTH_SHORT).show()
+                .addOnFailureListener { exception ->
+                    // Log the error
+                    Log.e("FirebaseError", "Failed to save booking", exception)
+                    Toast.makeText(this, "Failed to save booking: ${exception.message}", Toast.LENGTH_SHORT).show()
                 }
         }
     }
